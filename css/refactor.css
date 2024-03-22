@@ -1,0 +1,596 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+    background-color: #cbffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color:   #cddfdf;
+    position: fixed;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.header-logo {
+    height: 75px;
+    margin-left: 30px;
+    margin-top: 2px;
+}
+
+.header-links {
+    /* background-color: blue; */
+    width: 60%;
+    margin-top: 15px;
+}
+
+.header-item{
+    margin-right: 40px;
+    padding-top: 15px;
+}
+
+.header-item-link:hover {
+    color: #3d9d9d;
+}
+
+.items::after , .item1::after {
+    height: 6px;
+    top: 39px;
+    transition: 1s;
+}
+
+.item1::after , .items:hover::after , .item1:hover::after , .items:hover::after{
+    background-color: #3d9d9d;
+}
+
+.home {
+    /* background-color: #d6d6d6; */
+    height: 100vh;
+    background: url('../images/2.png');
+}
+
+.home-overlay {
+    opacity: 0.7;
+    z-index:1;
+}
+
+/* .home-button {
+    position: absolute;
+    padding: 20px;
+    background-color: blue;
+    top:11%;
+    right: 10%;
+    visibility: hidden;
+    display: none;*/
+    /* opacity:0;
+    transition: 3s; 
+} */
+
+/* .home-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+} */
+
+/* .header-anchoring:hover .home-button {
+    display: block;
+    visibility: visible; */
+    /* opacity: 1;
+    background-color: #000000;
+} */
+
+.home-content {
+    /* height: 300px; */
+    /* background-color: #cddfdf; */
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.home-content-title {
+    margin-top: 12%;
+}
+
+.home-content-text {
+    margin: 2% 0%;
+}
+
+.home-content-btn {
+    padding: 20px 25px;
+    font-size: 18px;
+}
+
+.btn1 {
+    background-color: #cddfdf;
+}
+
+.btn2 {
+    background-color: #98dddd;
+}
+
+.home-content-btn:hover, .welcome-item::after , .offer-item::after , .pricing-item::after , .team-item::after , .news-item::after {
+    opacity: 0.8;
+}
+
+.welcome , .work , .offer , .choose , .team {
+    background-color: #bad4d4;
+}
+
+.welcome {
+    background-color: #a0caca;
+}
+
+.home-content-btn, .welcome-decore , .work-decore , .offer-decore , .pricing-decore , .team-decore , .news-decore, .welcome-item-heading , .welcome-item-anchor, .offer-content, .choose-left-heading  {
+    text-transform: capitalize;
+}
+
+.line {
+    height: 5px;
+}
+
+.welcome-container , .work-container , .offer-container , .choose-container , .pricing-container , .team-container , .news-container {
+    /* background-color: #10ffff; */
+    margin-top: 20px;
+}
+
+.welcome-item , .work-item , .offer-item , .pricing-item , .team-item , .news-item, .achivement-item , .person-item, .work-overlay, .item {
+    width: 30%;
+    height: 200px;
+}
+
+.welcome-item2 , .work-parent-item2 , .offer-parent-item2 , .pricing-item2 , .team-item2 , .news-item2, .item2 {
+    margin: 0 5%;
+}
+
+.welcome-icon, .work  {
+    padding: 10px 0px;
+}
+
+.welcome-item-text, .pricing-btn {
+    font-size: 17px;
+}
+
+.header-item-link, .welcome-item-anchor, .news-anchor , .icons i {
+    text-decoration: none;
+}
+
+.items, .item1, .home, .welcome-item, .offer-item, .pricing-item, .team-item,
+.news-item, .work-item, .choose-parent-right, .achivement, .person, .team, .item {
+    position: relative;
+}
+
+.welcome-item::after , .offer-item::after , .pricing-item::after , .team-item::after , .news-item::after {
+    transition: 2s;
+}
+
+.welcome-item:hover::after , .offer-item:hover::after , .pricing-item:hover::after , .team-item:hover::after , .news-item:hover::after, .home-overlay, .item:hover::after, .work-overlay,.achivement-overlay , .person-overlay, .image, .overlay{
+    height: 100%;
+}
+
+.welcome-item:hover , .welcome-item:hover .welcome-item-anchor , .offer-item:hover , .pricing-item:hover, .news-anchor {
+    color: #3F51B5;
+}
+
+.pricing-item:hover .pricing-btn, .icons , .home-overlay, .line, .achivement-overlay, .person-overlay, .footer-lists li a, .items::after, .item1::after, .welcome-item::after, .offer-item::after, .pricing-item::after,
+.team-item::after, .news-item::after, .item::after, .work-overlay, .achivement-item , .person-item, .work-overlay {
+    background-color: #000000;
+}
+
+.pricing-item:hover .pricing-btn, .footer-lists li a, .icons, .icons i {
+    color: white;
+}
+/* //////////////////////// */
+
+.work {
+    height: 800px;
+    margin-top:0;
+    background-color: #bed6d6;
+}
+
+.work-item {
+    background-color: #d7f2f2;
+    height: 300px;
+}
+
+.work-overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.work-item-overlay, .home-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-icons, .icons {
+    width: 50px;
+}
+
+.work-item:hover .work-overlay {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+/* /////////////////// */
+.offer {
+    height: 600px;
+    background-color: #a7cece;
+}
+
+.offer-item, .work-item, .welcome-item-text {
+    padding: 20px;
+}
+
+.work-parent2 , .offer-parent{
+    margin-top: 30px;
+}
+
+.offer-icon {
+    width: 20%;
+    font-size: 25px;
+    /* background-color: #3F51B5; */
+}
+
+.offer-content, .choose-right-img, .achivement-container , .person-container, .team-container, .welcome-container , .work-container , .offer-container , .choose-container , .pricing-container , .team-container , .news-container {
+    width: 80%;
+    /* height: 270px; */
+    /* background-color: #3F51B5; */
+}
+
+/* /////////////////////////// */
+.choose { 
+    padding-top: 25px;
+}
+
+.choose-container, .img-parent {
+    width: 70%;
+}
+
+.choose-parent-left , .choose-parent-right, .home-content {
+    width: 50%;
+    /* height: 300px; */
+    /* background: rgb(230, 230, 230); */
+}
+
+.choose-line, .offer-content {
+    margin-left: 0;
+}
+
+.choose-parent-right {
+    width: 40%;
+    /* background-color: rgb(230, 230, 230); */
+}
+
+.choose-left-text {
+    margin: 30px 0px;
+}
+
+.choose-left-item, .pricing-text1 {
+    margin-bottom: 10px;
+}
+
+.choose-right-img {
+    /* padding:0px 20px; */
+    height: 80%;
+    /* margin: auto; */
+    background-color: #c9c9c9;
+}
+
+.choose-empty,.welcome-item::after , .offer-item::after , .pricing-item::after , .team-item::after , .news-item::after, .item::after {
+    height: 0;
+}
+
+.choose-icons {
+    height: 30px;
+}
+
+.choose-left-point {
+    width: 12px;
+    height: 12px;
+    background-color: #818181;
+    margin-top: 8px;
+}
+
+.achivement , .person {
+    height: 200px;
+    /* background-image: url('../images/2.png');
+    background-repeat:  no-repeat;
+    background-attachment:  fixed; */
+    background: url('../images/2.png') no-repeat fixed ;
+    background-size: cover;
+}
+
+.achivement-overlay , .person-overlay {
+    opacity: 0.5;
+}
+
+.achivement-container , .person-container {
+    /* background-color: #98dddd; */
+    margin-top: 50px;
+}
+
+.achivement-item , .person-item, .work-overlay {
+    width: 24%;
+    margin-right: 1%;
+}
+
+.achivement-container , .person-container, .achivement-item , .person-item, .work-overlay {
+    height: 100px;
+}
+
+/* //////////////////// */
+
+.pricing {
+    height: 550px;
+    background-color: #d6f5f5;
+    margin-bottom: 1px;
+}
+
+.pricing-item , .news-item, .team, .choose{
+    height: 400px;
+}
+
+.pricing-title , .pricing-text, .work-text, .work-heading{
+    padding-bottom: 20px;
+}
+
+.pricing-text1 {
+    /* background-color: #3d9d9d; */
+    border: 2px solid #8cdce9;
+    line-height: 30px;
+}
+
+.pricing-btn {
+    padding: 10px 20px;
+    background-color: #8cdce9;
+    border: none;
+}
+
+/* //////////////////// */
+.person-item {
+    width: 45%;
+}
+
+.person-left {
+    width: 10%;
+}
+
+.person-left-img {
+    width: 40px;
+    height: 40px;
+}
+
+.person-right {
+    width: 90%;
+}
+
+.person-item2 {
+    margin-left: 4%;
+}
+
+.person-right-text2 {
+    color: #a4a8ff;
+}
+
+/* ///////////////////////////// */
+.team-container {
+    height: 325px;
+    background-color: red;
+}
+
+.item {
+    background-color: green;
+    /* position: absolute; */
+    /* height: 300px; */
+}
+
+.item2 {
+    background-color: antiquewhite;
+}
+
+.item3 {
+    background-color: rgb(238, 141, 13);
+}
+
+.img-parent {
+    background-color: aqua;
+    height: 70%;
+    margin-left: 15%;
+}
+
+.icons {
+    margin-left: auto;
+}
+
+.icons i {
+    display: block;
+}
+
+.item:hover::after {
+    background: rgba(0, 0, 0,0.6);
+}
+
+.item:hover .overlay {
+    background: rgba(6, 6, 6, 0.6);
+
+}
+
+.team-item-bottom {
+    bottom: 0;
+    /* background-color: aqua; */
+}
+
+.item:hover .team-item-bottom {
+    color: gray;
+}
+
+.team-item-text2 {
+    /* font-size: 20px; */
+    margin: 0px 8%;
+}
+
+/* ////////////////////////// */
+.news {
+    background-color: rgba(188, 188, 188, 0.6);
+}
+
+.news-parent { 
+    height: 500px;
+}
+
+/* .news-parent {
+    background-color:rgb(220, 179, 179) ;
+} */
+
+.news-item {
+    background-color:lavenderblush ;
+}
+
+.news-title , .news-text , .news-anchor {
+    padding-top: 10px;
+}
+
+/* ///////////////////// */
+.footer {
+    background-color: rgb(227 227 227 / 29%);
+}
+
+.footer-lists {
+    margin: 20px 0px;
+}
+
+.footer-lists li {
+    display: inline;
+}
+
+.footer-content, .work-heading, .team-item-text2, .welcome, .work, .offer, .choose, .team, .footer {
+        height: 350px;
+}
+/* //////////refactoring///////// */
+
+.header, .item1::after, .items:hover::after, .home, .home-overlay, .welcome, .work,
+.offer, .choose, .team, .pricing-item::after, .team-item::after, .news-item::after,
+.welcome-item:hover::after, .offer-item:hover::after, .pricing-item:hover::after,
+.team-item:hover::after, .news-item:hover::after,.work-overlay, .achivement, .person,
+.achivement-overlay, .person-overlay, .pricing, .image, .overlay, .item::after, 
+.footer, .team-item-bottom {
+    width: 100%;
+}
+
+.header , .pricing-text1 {
+    height: 80px;
+}
+
+.welcome-parent, .work-parent, .offer-parent, .choose-parent, .choose-parent,
+.offer-item, .pricing-parent, .team-parent, .news-parent, .header,
+.achivement-container, .person-container, .person-parent, .team {
+    overflow: auto;
+}
+
+.header , .overlay , .item::after, .work-overlay, .achivement-overlay , .person-overlay {
+    top: 0;
+}
+
+.header, .items::after, .item1::after, .welcome-item::after, .offer-item::after,
+.pricing-item::after, .team-item::after, .news-item::after, .work-overlay,
+.achivement-overlay, .person-overlay , .item::after, .team-item-bottom, .overlay { 
+    left:0;
+}
+
+.header-logo, .choose-left-point, .pricing-text1, .person-left-img, .footer-lists li a {
+    border-radius: 50%;
+}
+
+.header-logo .welcome-item, .work-item, .offer-item, .pricing-item, .team-item, .news-item,
+.offer-icon, .choose-parent-left, .choose-parent-right, .achivement-item, .person-item, 
+.person-left, .item {
+    float: left;
+}
+
+.header-links , .work-icons , .icons i , .team-item-bottom {
+    height: 50px;
+}
+
+i.fas.fa-edit.work-icons, i.fas.fa-search.work-icons, .icons i {
+    line-height: 50px;
+}
+
+.header-links , .offer-content , .choose-parent-right , .person-right{
+    float: right;
+}
+
+.line , .choose-icons, .person-content, .team-container, .img-parent{
+    margin-top: 10px;
+}
+
+.header-links, .home-content, .welcome-icon, .work-heading {
+    font-size: 20px;
+}
+
+.header-item, .choose-left-point{
+    display: inline-block; 
+}
+
+.welcome-decore, .work-decore, .offer-decore, .pricing-decore, .team-decore,.news-decore,
+.offer-content-text ,.pricing-title, .footer {
+    padding-top: 20px;
+}
+
+.items::after, .item1::after, .welcome-item::after, .offer-item::after, .pricing-item::after,
+.team-item::after, .news-item::after, .item::after {    
+    content: "";
+    position: absolute;
+}
+
+.items::after , .item1::after, .choose-empty,.welcome-item::after , .offer-item::after , .pricing-item::after , .team-item::after , .news-item::after {
+    width: 0;
+}
+
+.header-logo, .line, .pricing-text1 {
+    width: 75px;
+}
+
+.overlay, .item::after {
+    transition: 3s;
+}
+
+.home-overlay, .home-content, .work-overlay, .work-item-overlay, .achivement-overlay , .person-overlay, .img-parent, .overlay, .team-item-bottom {
+    position: absolute;
+}
+
+.line, .choose-left-point, .achivement-container , .person-container, .pricing-text1, .team-container, .image, .welcome-container , .work-container , .offer-container , .choose-container , .pricing-container , .team-container , .news-container {
+    margin: auto;
+}
+
+.welcome, .work, .offer, .choose, .team, .welcome-item, .work-item, .offer-item, .pricing-item, .team-item,
+.news-item, .header-item-link, .welcome-item-anchor, .news-anchor, .icons i, .work-icons {
+    color: black;
+}
+
+.home-content .welcome-decore , .work-decore , .offer-decore , .pricing-decore , .team-decore , .news-decore, .welcome-item , .work-item , .offer-item , .pricing-item , .team-item , .news-item,
+.choose-parent-right, .choose-left-point,.achivement-item , .person-item, .item, .image, .footer{
+    text-align: center;
+}
+
+.achivement-item , .person-item,.news-item, .footer-lists li a {
+    padding: 10px;
+}
+
+.welcome-item , .work-item , .offer-item , .pricing-item , .team-item , .news-item, .achivement-item , .person-item, .work-overlay,
+.work-icons {
+    background-color:  white;
+}
+
+.person-item, .person-right, .news-item {
+    text-align: left;
+}
+
+.welcome , .work , .offer , .choose , .team, .footer {
+    height: 350px;
+}
